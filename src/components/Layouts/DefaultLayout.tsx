@@ -15,7 +15,6 @@ const DefaultLayout = ({ children }: Props) => {
 
   useEffect(() => {
     setMenu(false);
-    window.dispatchEvent(new Event('resize'));
   }, [location]);
 
   return (
