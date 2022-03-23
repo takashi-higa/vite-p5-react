@@ -1,0 +1,38 @@
+.menu {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  z-index: 2;
+  transition: transform 0.4s ease;
+  transform: translate(-100%, 0);
+  background-color: white;
+}
+
+.is-visibled {
+  transform: translate(0, 0);
+}
+
+.ul {
+  padding: 100px 20px;
+}
+
+.li {
+  font-size: 12px;
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  a {
+    // font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
